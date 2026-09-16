@@ -1,0 +1,32 @@
+{
+  "dataset": "FD004",
+  "method": "local",
+  "seed": 22,
+  "nodes": 10,
+  "epochs": 50,
+  "hidden": [
+    100,
+    50
+  ],
+  "length": 50,
+  "stride": 1,
+  "horizon": 30,
+  "use_cycle": true,
+  "partition": "iid",
+  "topology": "ring",
+  "scenario": "none",
+  "period": 1,
+  "lr": 0.001,
+  "batch": 200,
+  "threads": 1,
+  "event_threshold": 0.02,
+  "max_silence": 5,
+  "bandwidth_mbps": 10.0,
+  "latency_ms": 10.0,
+  "deadline_ms": 100.0,
+  "eval_every": 5,
+  "bootstrap": 500,
+  "smoke": false,
+  "software_sha256": "4c0b8eb2f3a965837835a6f5792f1d4679ef680889bd68ccb957e5010ae7a2cc",
+  "data_content_sha256": "cc343f4c578c8991663ca2766e0faed56d8f0bc732e0d23916f653286dbbb39e"
+}

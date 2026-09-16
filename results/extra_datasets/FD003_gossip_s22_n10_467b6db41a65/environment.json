@@ -1,0 +1,9 @@
+{
+  "python": "3.9.25",
+  "torch": "2.5.1+cu121",
+  "numpy": "2.0.2",
+  "platform": "Linux-5.14.0-687.39.1.el9_8.x86_64-x86_64-with-glibc2.34",
+  "processor": "x86_64",
+  "threads": 1,
+  "device": "cpu"
+}
