@@ -72,6 +72,20 @@ by the commands above. Each `config.json` records `software_sha256` (`7d748ee1â€
 time the runs were produced; the released code differs from that snapshot only in report text, a code comment and the
 dataset-audit command, not in data handling, training or evaluation.
 
+## Additional subsets (FD003, FD004)
+
+`data_extra/FD003` and `data_extra/FD004` contain the corresponding NASA C-MAPSS files in the same format. The replication
+in Section 4.8 of the paper (centralized, FedAvg, gossip, local-only; seeds 11, 22, 33; unchanged FD001 protocol) is run with
+
+```bash
+for d in FD003 FD004; do for s in 11 22 33; do for m in centralized fedavg gossip local; do
+  python run_pdm.py run --suite core --seeds $s --methods $m --data data_extra/$d --dataset-name $d \
+      --threads 1 --output output_extra/${d}_${m}_s${s}
+done; done; done
+```
+
+Released outputs are in `results/extra_datasets/` (Python 3.9, PyTorch 2.5.1, CPU, one process per run).
+
 ## Data
 
 `data/` holds the NASA C-MAPSS FD001 files; see [`data/README.md`](data/README.md) for source and citation.
