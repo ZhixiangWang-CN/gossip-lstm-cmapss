@@ -1,0 +1,17 @@
+dataset,nodes,partition,scenario,topology,period,epochs,use_cycle,event_threshold,hidden,stride,protocol_id,treatment,control,n_pairs,mean_delta_f1,exact_signflip_p,holm_p
+FD001,5,iid,none,ring,1,50,True,0.02,"[100, 50]",1,ab89e2e3e236,gossip,fedavg,3,-0.03785383903792786,0.25,1.0
+FD001,10,iid,node_failure,ring,1,50,True,0.02,"[100, 50]",1,77f2bb654cec,gossip,fedavg,3,-0.03238685031006957,0.5,1.0
+FD001,10,iid,none,ring,1,50,False,0.02,"[100, 50]",1,451d41a53b0b,gossip,fedavg,3,0.0031442080378250767,0.75,1.0
+FD001,10,iid,none,ring,1,50,True,0.02,"[100, 50]",1,22b20344bb16,gossip,local,5,0.059966270050194816,0.125,1.0
+FD001,10,iid,none,ring,1,50,True,0.02,"[100, 50]",1,22b20344bb16,gossip,fedavg,5,-0.0026462102571525037,0.75,1.0
+FD001,10,iid,none,ring,1,50,True,0.02,"[100, 50]",1,22b20344bb16,gossip_weighted,gossip,5,0.024157945437385076,0.1875,1.0
+FD001,10,iid,none,ring,1,50,True,0.02,"[100, 50]",1,22b20344bb16,fedavg_weighted,fedavg,5,0.050447874512598315,0.0625,1.0
+FD001,10,iid,none,ring,1,50,True,0.02,"[100, 50]",1,22b20344bb16,event_gossip,gossip,5,-0.005555555555555558,0.5,1.0
+FD001,10,iid,none,ring,1,50,True,0.02,"[100, 50]",1,22b20344bb16,event_gossip_weighted,event_gossip,5,0.02125497912265406,0.1875,1.0
+FD001,10,iid,none,ring,1,50,True,0.02,"[100, 50]",1,22b20344bb16,event_gossip_weighted,gossip_weighted,5,-0.008458521870286572,0.5,1.0
+FD001,10,iid,packet_loss,ring,1,50,True,0.02,"[100, 50]",1,d3f904be6308,gossip,fedavg,3,0.015700483091787436,0.5,1.0
+FD001,10,iid,server_outage,ring,1,50,True,0.02,"[100, 50]",1,ace76c4c163e,gossip,fedavg,3,-0.03606937810585231,0.25,1.0
+FD001,10,lifetime,none,ring,1,50,True,0.02,"[100, 50]",1,c3abb1342efd,gossip,local,3,-0.004811759219054042,1.0,1.0
+FD001,10,lifetime,none,ring,1,50,True,0.02,"[100, 50]",1,c3abb1342efd,gossip,fedavg,3,0.04067268791146339,0.25,1.0
+FD001,20,iid,none,ring,1,50,True,0.02,"[100, 50]",1,15ec19a42f2d,gossip,fedavg,3,-0.0012419912974954705,1.0,1.0
+FD001,40,iid,none,ring,1,50,True,0.02,"[100, 50]",1,0d56a1322361,gossip,fedavg,3,-0.03094594867264966,0.75,1.0

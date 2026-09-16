@@ -1,0 +1,32 @@
+{
+  "dataset": "FD001",
+  "method": "fedavg",
+  "seed": 33,
+  "nodes": 40,
+  "epochs": 50,
+  "hidden": [
+    100,
+    50
+  ],
+  "length": 50,
+  "stride": 1,
+  "horizon": 30,
+  "use_cycle": true,
+  "partition": "iid",
+  "topology": "ring",
+  "scenario": "none",
+  "period": 1,
+  "lr": 0.001,
+  "batch": 200,
+  "threads": 2,
+  "event_threshold": 0.02,
+  "max_silence": 5,
+  "bandwidth_mbps": 10.0,
+  "latency_ms": 10.0,
+  "deadline_ms": 100.0,
+  "eval_every": 5,
+  "bootstrap": 500,
+  "smoke": false,
+  "software_sha256": "7d748ee10e82f427cb270a478588bd25fe71307d4be7391cabe1e0736cafd80f",
+  "data_content_sha256": "07e554597620086ba1492d5148f8945d646d3626b000e48af5c13fd688c9946e"
+}
